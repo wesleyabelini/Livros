@@ -45,17 +45,7 @@ namespace LivrosBot.Models
                     .IsRequired()
                     .IsUnicode(false);
 
-                entity.Property(e => e.Epub)
-                    .HasMaxLength(500)
-                    .IsUnicode(false)
-                    .HasColumnName("EPUB");
-
                 entity.Property(e => e.Matrix).IsUnicode(false);
-
-                entity.Property(e => e.Mobi)
-                    .HasMaxLength(500)
-                    .IsUnicode(false)
-                    .HasColumnName("MOBI");
 
                 entity.Property(e => e.NomeAutor)
                     .IsRequired()
@@ -66,11 +56,6 @@ namespace LivrosBot.Models
                     .IsRequired()
                     .HasMaxLength(500)
                     .IsUnicode(false);
-
-                entity.Property(e => e.Pdf)
-                    .HasMaxLength(500)
-                    .IsUnicode(false)
-                    .HasColumnName("PDF");
 
                 entity.Property(e => e.UrlBook)
                     .IsRequired()

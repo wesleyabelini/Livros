@@ -14,9 +14,6 @@ namespace LivrosBot.Models
         public string Categoria { get; set; }
         public string UrlCapa { get; set; }
         public string UrlBook { get; set; }
-        public string Epub { get; set; }
-        public string Pdf { get; set; }
-        public string Mobi { get; set; }
         public string Matrix { get; set; }
     }
 }

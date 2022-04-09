@@ -16,9 +16,6 @@
           <Property Name="Categoria" Type="varchar" MaxLength="30" />
           <Property Name="URL_CAPA" Type="varchar" MaxLength="500" Nullable="false" />
           <Property Name="URL_BOOK" Type="varchar" MaxLength="500" Nullable="false" />
-          <Property Name="EPUB" Type="varchar" MaxLength="500" />
-          <Property Name="PDF" Type="varchar" MaxLength="500" />
-          <Property Name="MOBI" Type="varchar" MaxLength="500" />
           <Property Name="Matrix" Type="varchar(max)" />
         </EntityType>
         <EntityContainer Name="LivroModelStoreContainer">

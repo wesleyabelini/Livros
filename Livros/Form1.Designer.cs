@@ -28,16 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.dgvBook = new System.Windows.Forms.DataGridView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uRLDownloadFormatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livroEPUBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livroMOBIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livroTodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tituloAutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picCapa = new System.Windows.Forms.PictureBox();
             this.txtDescricao = new System.Windows.Forms.RichTextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -54,7 +45,6 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripTxtAutor = new System.Windows.Forms.ToolStripTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCapa)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -67,7 +57,6 @@
             this.dgvBook.AllowUserToDeleteRows = false;
             this.dgvBook.AllowUserToResizeRows = false;
             this.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBook.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvBook.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvBook.Location = new System.Drawing.Point(0, 276);
             this.dgvBook.Name = "dgvBook";
@@ -78,64 +67,6 @@
             this.dgvBook.Size = new System.Drawing.Size(1297, 206);
             this.dgvBook.TabIndex = 1;
             this.dgvBook.SelectionChanged += new System.EventHandler(this.dgvBook_SelectionChanged);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.excluirToolStripMenuItem,
-            this.selectToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(122, 52);
-            // 
-            // excluirToolStripMenuItem
-            // 
-            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
-            this.excluirToolStripMenuItem.Text = "Excluir";
-            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
-            // 
-            // selectToolStripMenuItem
-            // 
-            this.selectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.uRLDownloadFormatoToolStripMenuItem,
-            this.livroEPUBToolStripMenuItem,
-            this.livroMOBIToolStripMenuItem,
-            this.livroTodosToolStripMenuItem,
-            this.tituloAutorToolStripMenuItem});
-            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
-            this.selectToolStripMenuItem.Text = "Select";
-            // 
-            // uRLDownloadFormatoToolStripMenuItem
-            // 
-            this.uRLDownloadFormatoToolStripMenuItem.Name = "uRLDownloadFormatoToolStripMenuItem";
-            this.uRLDownloadFormatoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.uRLDownloadFormatoToolStripMenuItem.Text = "Livro PDF";
-            // 
-            // livroEPUBToolStripMenuItem
-            // 
-            this.livroEPUBToolStripMenuItem.Name = "livroEPUBToolStripMenuItem";
-            this.livroEPUBToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.livroEPUBToolStripMenuItem.Text = "Livro EPUB";
-            // 
-            // livroMOBIToolStripMenuItem
-            // 
-            this.livroMOBIToolStripMenuItem.Name = "livroMOBIToolStripMenuItem";
-            this.livroMOBIToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.livroMOBIToolStripMenuItem.Text = "Livro MOBI";
-            // 
-            // livroTodosToolStripMenuItem
-            // 
-            this.livroTodosToolStripMenuItem.Name = "livroTodosToolStripMenuItem";
-            this.livroTodosToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.livroTodosToolStripMenuItem.Text = "Livro - Todos";
-            // 
-            // tituloAutorToolStripMenuItem
-            // 
-            this.tituloAutorToolStripMenuItem.Name = "tituloAutorToolStripMenuItem";
-            this.tituloAutorToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.tituloAutorToolStripMenuItem.Text = "Titulo - Autor";
             // 
             // picCapa
             // 
@@ -282,7 +213,6 @@
             this.Name = "fLivros";
             this.Text = "Livros";
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picCapa)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -309,17 +239,9 @@
         private System.Windows.Forms.ToolStripMenuItem tsUpdateDb;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripTextBox toolStripTxtTitulo;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripTextBox toolStripTxtAutor;
-        private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem uRLDownloadFormatoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem livroEPUBToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem livroMOBIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem livroTodosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tituloAutorToolStripMenuItem;
     }
 }
 

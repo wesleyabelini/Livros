@@ -39,9 +39,6 @@ CREATE TABLE [dbo].[Book] (
     [Categoria] varchar(30)  NULL,
     [URL_CAPA] varchar(500)  NOT NULL,
     [URL_BOOK] varchar(500)  NOT NULL,
-    [EPUB] varchar(500)  NULL,
-    [PDF] varchar(500)  NULL,
-    [MOBI] varchar(500)  NULL
 );
 GO
 
