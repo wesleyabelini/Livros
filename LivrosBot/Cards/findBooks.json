@@ -1,0 +1,123 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "60px",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crystal_Clear_kdm_user_female.svg/1024px-Crystal_Clear_kdm_user_female.svg.png",
+                  "horizontalAlignment": "Center",
+                  "size": "Medium",
+                  "style": "Person"
+                }
+              ],
+              "horizontalAlignment": "Center",
+              "height": "stretch"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Encontrei alguns livros. Caso o seu livro de interesse esteja listado abaixo, é clicar.",
+                  "wrap": true,
+                  "color": "Default",
+                  "fontType": "Default",
+                  "size": "Medium"
+                }
+              ]
+            }
+          ],
+          "style": "emphasis"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "60px",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crystal_Clear_kdm_user_female.svg/1024px-Crystal_Clear_kdm_user_female.svg.png",
+                  "horizontalAlignment": "Center",
+                  "size": "Medium",
+                  "style": "Person"
+                }
+              ],
+              "horizontalAlignment": "Center",
+              "height": "stretch"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "wrap": true,
+                  "color": "Default",
+                  "fontType": "Default",
+                  "size": "Medium",
+                  "text": "Se ainda estiver em dúvida na escolha do seu livro, eu consigo fazer uma consulta pela sinópse dos livros acima e verificar qual livro é o mais indicado para sua leitura."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "separator": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Deseja fazer uma consulta pela sinópse?",
+      "wrap": true
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "ActionSet",
+              "actions": [
+                {
+                  "type": "Action.Submit",
+                  "title": "Sim",
+                  "style": "positive",
+                  "data": {
+                    "sinopse": true
+                  }
+                }
+              ],
+              "separator": true
+            }
+          ],
+          "horizontalAlignment": "Center",
+          "selectAction": {
+            "type": "Action.Submit",
+            "id": "idsim"
+          }
+        }
+      ],
+      "separator": true
+    }
+  ]
+}

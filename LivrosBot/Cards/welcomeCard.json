@@ -1,0 +1,51 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "60px",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crystal_Clear_kdm_user_female.svg/1024px-Crystal_Clear_kdm_user_female.svg.png",
+                  "horizontalAlignment": "Center",
+                  "size": "Medium",
+                  "style": "Person"
+                }
+              ],
+              "horizontalAlignment": "Center",
+              "height": "stretch"
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Ola, eu sou o Livros Bot. \nEstou aqui para ajudar a encontrar um livro de sua preferência.",
+                  "wrap": true,
+                  "color": "Default",
+                  "fontType": "Default",
+                  "size": "Medium"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Digite o nome do autor:",
+      "wrap": true
+    }
+  ]
+}

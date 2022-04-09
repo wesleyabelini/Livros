@@ -1,0 +1,48 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "100px",
+          "items": [
+            {
+              "type": "Image",
+              "url": "",
+              "spacing": "None"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Titulo",
+              "wrap": true,
+              "weight": "Bolder",
+              "size": "Default"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Autor\n",
+              "wrap": true,
+              "isSubtle": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "wrap": true,
+      "size": "Default",
+      "text": "Sinopse"
+    }
+  ]
+}
